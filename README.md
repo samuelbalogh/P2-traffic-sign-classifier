@@ -161,6 +161,7 @@ Here are the results of the prediction:
 
 1.  The CNN is certain that the image is a `keep right` sign (1.00000000e+00 probability) **CORRECT**
 2.  The CNN is quite certain that the image is a stop sign (.998 probability).  **CORRECT**
+
     The second choice is the `no entry` sign, which is reasonable: the shape and patter is somewhat similar.
 3. The CNN is certain that the image is a `yield` sign  (1.00000000e+00 probability) **CORRECT**
 4. The CNN is certain that the image is a `bumpy road` sign  (1.00000000e+00 probability) **INCORRECT**
