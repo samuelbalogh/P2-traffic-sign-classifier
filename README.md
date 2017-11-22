@@ -46,7 +46,6 @@ Some examples from the dataset are shown below:
 ![alt text](images/4.png)
 ![alt text](images/5.png)
 ![alt text](images/6.png)
-![alt text](images/7.png)
 
 
 ### Design and Test a Model Architecture
