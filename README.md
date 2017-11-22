@@ -95,20 +95,20 @@ My final model consisted of the following layers:
 
 Here are the results of the prediction:
 
-|  Lazer  					| Input | Output
-|:---------------------:|:---------------------------------------------:|
-| Convolutional      		| 32x32x1  									| 28x28x6
-| Activation layer, RELU function    			| 										|
-| Max pooling layer			| 28x28x6											| 14x14x6
-| Convolutional  		| 		14x14x6			|  10x10x16
-| Activation layer, RELU function    			| 										|
-| Max pooling layer			| 10x10x16									| 5x5x16
-| Flatten layer |  5x5x16 | 400.
-| Fully Connected layer | 400 | 120
-| Activation layer, RELU function    			| 										|
-| Fully Connected layer | 120 | 84
-| Activation layer, RELU function    			| 										|
-| Fully connected layer | 84 | 43 for the 43 labels
+|  Layer  					| Input | Output |
+|:---------------------:|:----------------------:|:-----------------------:|
+| Convolutional      		| 32x32x1  									| 28x28x6 |
+| Activation layer, RELU function    			| 										| |
+| Max pooling layer			| 28x28x6											| 14x14x6 |
+| Convolutional  		| 		14x14x6			|  10x10x16 |
+| Activation layer, RELU function    			| 										| |
+| Max pooling layer			| 10x10x16									| 5x5x16 |
+| Flatten layer |  5x5x16 | 400 |
+| Fully Connected layer | 400 | 120 |
+| Activation layer, RELU function    			| 										| |
+| Fully Connected layer | 120 | 84 |
+| Activation layer, RELU function    			| 										| |
+| Fully connected layer | 84 | 43 for the 43 labels |
 
 
 
