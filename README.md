@@ -208,3 +208,5 @@ TopKV2(values=array([
 ### Conclusion
 
 We can conclude that the original LeNet architecture, with slight modifications, performed well on traffic sign recognition task.
+
+Further enhancement could be achieved by augmenting even more the training dataset and using more layers (pooling, dropout).
