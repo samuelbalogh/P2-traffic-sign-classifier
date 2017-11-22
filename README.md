@@ -7,8 +7,7 @@
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
-* Explore, summarize and visualize the data set
+* Load, explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
 * Analyze the softmax probabilities of the new images
@@ -125,7 +124,7 @@ Here are nine German traffic signs that I found on the web:
 ![alt text](custom_images/1_30limit.png)
 ![alt text](custom_images/2_50limit.jpg)
 ![alt text](custom_images/13_yield.png)
-![alt text](custom_images/1_14stop.jpg])
+![alt text](custom_images/14_stop.jpg])
 ![alt text](custom_images/17_noentry.jpg)
 ![alt text](custom_images/18_slope.JPG)
 ![alt text](custom_images/23_slippery.jpg)
@@ -155,7 +154,21 @@ Here are the results of the prediction:
 
 #### 3. Softmax probabilities and predictions for the new images
 
-`
+1.  The CNN is certain that the image is a `keep right` sign (1.00000000e+00 probability) **CORRECT**
+2.  The CNN is quite certain that the image is a stop sign (.998 probability).  **CORRECT**
+    The second choice is the `no entry` sign, which is reasonable: the shape and patter is somewhat similar.
+3. The CNN is certain that the image is a `yield` sign  (1.00000000e+00 probability) **CORRECT**
+4. The CNN is certain that the image is a `bumpy road` sign  (1.00000000e+00 probability) **INCORRECT**
+   The real image is a 20% slope sign, which was not taught to the CNN.
+5. The CNN is certain that the image is a `Speed limit 50` sign (.99999 probability) **CORRECT**
+6. The CNN is certain that the image is a `road works` sign (1.00000000e+00 probability) **CORRECT**
+7. The CNN is certain that the image is a `no entry` sign (1.00000000e+00 probability) **CORRECT**
+8. The CNN is the least certain about this image: it gives .95302 probability that its a `keep right sign`, despite the fact that it's a `slippery road` sign. The fact that the image has a different sign with its back facing the camera might be a big factor in this error.  **INCORRECT**
+9. The CNN is certain that the image is a `Speed limit 30` sign (.99999 probability) **CORRECT**
+
+The code output with the softmax probabilites and labes can be seen below:
+
+```
 TopKV2(values=array([
        [  1.00000000e+00,   1.85656843e-20,   1.78306907e-20,
           6.09276783e-22,   3.70710170e-28],
@@ -183,4 +196,8 @@ TopKV2(values=array([
        [17, 14,  9, 10, 16],
        [38, 11, 37, 30, 23],
        [ 1,  0, 40, 39, 35]], dtype=int32))
-`
+```
+
+### Conclusion
+
+We can conclude that the original LeNet architecture, with slight modifications, performed well on traffic sign recognition task.
