@@ -44,6 +44,9 @@ Some examples from the dataset are shown below:
 ![alt text](images/2.png)
 ![alt text](images/3.png)
 ![alt text](images/4.png)
+![alt text](images/5.png)
+![alt text](images/6.png)
+![alt text](images/7.png)
 
 
 ### Design and Test a Model Architecture
@@ -90,6 +93,25 @@ My final model consisted of the following layers:
 - Finally, a fully connected layer. Input = 84. Output = 43 for the 43 labels.
 
 
+Here are the results of the prediction:
+
+|  Lazer  					| Input | Output
+|:---------------------:|:---------------------------------------------:|
+| Convolutional      		| 32x32x1  									| 28x28x6
+| Activation layer, RELU function    			| 										|
+| Max pooling layer			| 28x28x6											| 14x14x6
+| Convolutional  		| 		14x14x6			|  10x10x16
+| Activation layer, RELU function    			| 										|
+| Max pooling layer			| 10x10x16									| 5x5x16
+| Flatten layer |  5x5x16 | 400.
+| Fully Connected layer | 400 | 120
+| Activation layer, RELU function    			| 										|
+| Fully Connected layer | 120 | 84
+| Activation layer, RELU function    			| 										|
+| Fully connected layer | 84 | 43 for the 43 labels
+
+
+
 #### 3. Training the model
 
 To train the model,
@@ -124,7 +146,7 @@ Here are nine German traffic signs that I found on the web:
 ![alt text](custom_images/1_30limit.png)
 ![alt text](custom_images/2_50limit.jpg)
 ![alt text](custom_images/13_yield.png)
-![alt text](custom_images/14_stop.jpg])
+![alt text](custom_images/14_stop.jpg)
 ![alt text](custom_images/17_noentry.jpg)
 ![alt text](custom_images/18_slope.JPG)
 ![alt text](custom_images/23_slippery.jpg)
