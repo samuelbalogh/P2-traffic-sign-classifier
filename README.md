@@ -165,6 +165,7 @@ Here are the results of the prediction:
     The second choice is the `no entry` sign, which is reasonable: the shape and patter is somewhat similar.
 3. The CNN is certain that the image is a `yield` sign  (1.00000000e+00 probability) **CORRECT**
 4. The CNN is certain that the image is a `bumpy road` sign  (1.00000000e+00 probability) **INCORRECT**
+
    The real image is a 20% slope sign, which was not taught to the CNN.
 5. The CNN is certain that the image is a `Speed limit 50` sign (.99999 probability) **CORRECT**
 6. The CNN is certain that the image is a `road works` sign (1.00000000e+00 probability) **CORRECT**
