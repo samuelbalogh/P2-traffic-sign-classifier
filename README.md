@@ -79,21 +79,6 @@ I started with the original LeNet architecture to see how well it performs. It d
 
 My final model consisted of the following layers:
 
-- Convolutional. Input = 32x32x1. Output = 28x28x6
-- Activation layer with a RELU function
-- Max pooling layer, Input = 28x28x6. Output = 14x14x6
-- Convolutional. Output = 10x10x16.
-- Activation layer with a RELU function
-- Max pooling layer, Input = 10x10x16. Output = 5x5x16.
-- Flatten layer, Input = 5x5x16. Output = 400.
-- Fully Connected layer, Input = 400. Output = 120
-- Activation layer with a RELU function
-- Fully Connected. Input = 120. Output = 84.
-- Activation layer with a RELU function
-- Finally, a fully connected layer. Input = 84. Output = 43 for the 43 labels.
-
-
-Here are the results of the prediction:
 
 |  Layer  					| Input | Output |
 |:---------------------:|:----------------------:|:-----------------------:|
@@ -109,7 +94,6 @@ Here are the results of the prediction:
 | Fully Connected layer | 120 | 84 |
 | Activation layer, RELU function    			| 										| |
 | Fully connected layer | 84 | 43 for the 43 labels |
-
 
 
 #### 3. Training the model
